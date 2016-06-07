@@ -1,5 +1,9 @@
+*.ccp~
+*~
+
+a.out
 sum
 tower
 main
-*.ccp~
-*~
+cmp
+find
