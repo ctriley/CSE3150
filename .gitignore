@@ -1,9 +1,13 @@
 *.ccp~
 *~
-
+*.out
 a.out
 sum
 tower
 main
 cmp
 find
+copy
+max
+concat
+
