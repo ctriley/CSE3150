@@ -1,20 +1,10 @@
-class Point {
-    double _x, _y;
-public:
-    Point() { _x = _y = 0;}
-    Point(double x, double y) { _x = x; _y = y;}
-    Point(const Point& p) : _x(p._x), _y(p._y) {}
-    double getX() const {return _x;}
-    double getY() const {return _y;}
-    void set(double x, double y) { _x = x; _y = y;}
-    Point& operator=(const Point& p) { _x = p._x; _y = p._y; return *this;}
-    friend Point operator+(const Point& p1, const Point& p2);
-    friend Point operator*(const Point& p1, double s);
-    friend std::ostream& operator<<(std::ostream& os, const Point& p);
-};
+#ifndef __RECTANGLE_H
+#define __RECTANGLE_H
+
+#include "Point.h"
 
 class Rectangle {
-    Point _corner;
+  Point _corner;
     double _w, _h;
 public:
     Rectangle() : _w(0), _h(0) {}
@@ -27,3 +17,5 @@ public:
         return os << "rect(" << *r._corner << "," << r._w << "," << r._h << ")";
     }
 };
+
+#endif

@@ -26,6 +26,9 @@ public:
     String getName() {return _name;}
 };
 
+/*
+    && means that it is a reference to an r-value (an unassigned temp)
+*/
 
 // structs are always public by default
 /*struct Student {

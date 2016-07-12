@@ -1,3 +1,6 @@
+#ifndef __POINT_H
+#define __POINT_H
+
 class Point {
     double _x, _y;
 public:
@@ -13,3 +16,4 @@ public:
     friend std::ostream& operator<<(std::ostream& os, const Point& p);
 };
 
+#endif
